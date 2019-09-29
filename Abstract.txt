@@ -1,0 +1,48 @@
+SAM9260 DF        P1056              CS1
+SAM9260 DataFlash Page 1056 bytes on Chip Select 1
+
+The 2-nd level Bootloader for Atmel 'AT91SAM9260' 
+running from External DataFlash (Page Size 1056 
+Bytes, eg. AT45DB642D) using Chip Select 1 for 
+DataFlash interfacing
+
+It downloads to first 16.5kB of DataFlash.
+1-st level bootloader that is in ROM of 
+AT91SAM9260 first downloads this 2-nd level 
+bootloader to internal RAM and starts it.
+
+2-nd level bootloader's main function is to 
+copy user program from DataFlash to 
+External SDRAM and start it.
+
+Just select Flash -> Download to download it 
+to DataFlash.
+
+Clocks: Oscillator      =  18.432000 MHz
+        PLLA            =  96.109714 MHz
+        Processor Clock =  96.109714 MHz
+        Master Clock    =  96.109714 MHz
+
+Important: !!! Do not rebuild with EVAL version !!!
+
+Notes:
+  - to erase Bootloader just press "BP4" button 
+    on the board while power-up
+
+DataFlash Organization:
+
+0x00000000 _ ____________________________
+            |                            |
+            |   2-nd Level Bootloader    |
+            |                            |
+0x00001000 -| - - - - - - - - - - - - - -|
+            |                            |
+            :  Reserved for future use   :
+            :                            :
+            |                            |
+0x00004200 -|============================|
+            |                            |
+            |       User Program         |
+            :                            :
+            :                            :
+0x00840000 _|____________________________|

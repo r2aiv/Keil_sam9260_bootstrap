@@ -1,0 +1,8 @@
+--cpu ARM926EJ-S
+".\output\sam9260.o"
+".\output\bootloader.o"
+".\output\dflashhw.o"
+--library_type=microlib --strict --scatter ".\Output\SAM9260_DF_P1056_CS1_BL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Output\SAM9260_DF_P1056_CS1_BL.map" -o .\Output\SAM9260_DF_P1056_CS1_BL.axf

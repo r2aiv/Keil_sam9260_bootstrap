@@ -1,0 +1,10 @@
+Dependencies for Project 'Bootloader', Target 'SAM9260_DF_P1056_CS1_BL': (DO NOT MODIFY !)
+F (.\SAM9260.s)(0x559D2322)(--cpu ARM926EJ-S -g --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\INC\Atmel\SAM9260--pd "__UVISION_VERSION SETA 524" --pd "SIZE_INT_INFO SETA 1"-o .\output\sam9260.o --depend .\output\sam9260.d)
+F (.\Bootloader.c)(0x559D2322)(-c --cpu ARM926EJ-S -D__MICROLIB -g -O0 --diag_suppress 61,68-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\INC\Atmel\SAM9260-D__UVISION_VERSION="524" -DP1056_CS1-o .\output\bootloader.o --omf_browse .\output\bootloader.crf --depend .\output\bootloader.d)
+I (D:\Keil_v5\ARM\INC\Atmel\SAM9260\AT91SAM9260.H)(0x559D213C)
+I (FlashHW.h)(0x559D2322)
+I (Error.h)(0x559D2320)
+F (.\DFlashHW.c)(0x559D2322)(-c --cpu ARM926EJ-S -D__MICROLIB -g -O0 --diag_suppress 61,68-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\INC\Atmel\SAM9260-D__UVISION_VERSION="524" -DP1056_CS1-o .\output\dflashhw.o --omf_browse .\output\dflashhw.crf --depend .\output\dflashhw.d)
+I (D:\Keil_v5\ARM\INC\Atmel\SAM9260\AT91SAM9260.H)(0x559D213C)
+I (Error.h)(0x559D2320)
+F (.\Abstract.txt)(0x559D2322)()
